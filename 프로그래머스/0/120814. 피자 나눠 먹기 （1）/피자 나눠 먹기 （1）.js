@@ -1,9 +1,7 @@
 function solution(n) {
-    let pizzaslice = 7;
-    let pizzacount = Math.floor(n / pizzaslice);
-    
-    if (n % pizzaslice !== 0) {
-        pizzacount += 1;
+    let pizzacount = Math.floor(n / 7);
+    if (n % 7 !== 0) {
+        pizzacount += 1
     }
     return pizzacount;
 }
