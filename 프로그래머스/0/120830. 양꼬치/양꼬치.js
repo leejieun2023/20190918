@@ -1,9 +1,7 @@
 function solution(n, k) {
-    // 10인분씩마다 먹으면 음료수 1개 서비스
-    // 양꼬치 1인분 12,000원 / 음료수 1개 2,000원
-    // n인분 양꼬치, k개의 음료수 = 얼마를 지불해야하는지?
-    let gogi = n * 12000;
-    let water = k * 2000;
-    let free = Math.floor(n / 10);
-    return gogi + water - (2000 * free);
+    // 양꼬치 12000원 / 음료수 2000원 / 10인분당 음료수 1병 서비스
+    let 양꼬치 = 12000 * n;
+    let 음료수 = 2000 * k;
+    let 서비스 = Math.floor(n / 10);
+    return 총가격 = 양꼬치 + 음료수 - (2000 * 서비스);
 }
